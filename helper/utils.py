@@ -64,21 +64,15 @@ def generate_response(message: str) -> str:
         - str: formated response for the command
     '''
     if message == '/seguime':
-        return 'Seguime en in: https://instagram.com/vigmarco'
-    elif message == '/youtube':
-        return 'You can watch my video tutorials here: https://www.youtube.com/channel/UCOT01XvBSj12xQsANtTeAcQ'
-    elif message == '/github':
-        return 'You can get helpful piece of code here: https://github.com/RajKKapadia'
-    elif message == '/buyacoffee':
-        return 'If you like my work please consider buying me a coffee here: https://www.buymeacoffee.com/rajkkapadia'
-    elif message == '/help':
-        return 'You can ask almost anything here, but do not belive whatever this bot says. :-)'
+        return 'https://instagram.com/vigmarco'
+    elif message == '/ayuda':
+        return 'Alfa Bot puede responder cualquier pregunta del universo'
     elif message == '/start':
-        return 'Hi, this is a chat-bot that uses OpenAI GPT-3, developed by me with love. I will not spam you for sure.'
+        return 'Hola padre, cómo va?'
     else:
         result = text_complition(message)
         if result['status'] == 1:
             return result['response'].strip()
         else:
-            return 'Sorry, I am out of service at this moment.'
+            return 'Ahora no, estoy descansando'
             
