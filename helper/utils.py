@@ -67,6 +67,8 @@ def generate_response(message: str) -> str:
         return 'https://instagram.com/vigmarco'
     elif message == '/ayuda':
         return 'Alfa Bot puede responder cualquier pregunta del universo'
+    elif message == '/stickers':
+        return 'https://t.me/addstickers/lucreciamstickers / https://t.me/addstickers/mansonstickers / https://t.me/addstickers/bizarristickers'
     elif message == 'Yo voy en trenes':
         return '...no tengo donde ir'
     elif message == 'Proceda':
