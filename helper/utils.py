@@ -73,14 +73,18 @@ def generate_response(message: str) -> str:
         return '...no tengo donde ir'
     elif message == 'Proceda':
         return '> Modo Maslatón Activado <'
-    elif message == 'Estamos en bull market?':
-        return 'Argentina está en imparable bull market. No mueras aplastado por tu mente tan bearish y destructiva.'
+    elif message == 'Hola Alfa':
+        return 'Los likes de tik tok no son lealtad, son likes. Nada más.'
+    elif message == 'Tengo sueño':
+        return 'Retirate si no querés morir.'
+    elif message == 'Votos':
+        return 'Y mi segundo voto es para Luciana.'
     elif message == '/start':
-        return 'Hola, cómo va?'
+        return 'No tengo necesidad de agarrar una pala porque soy inteligente, Holder.'
     else:
         result = text_complition(message)
         if result['status'] == 1:
             return result['response'].strip()
         else:
-            return 'Ahora no, estoy descansando'
+            return 'Ahora no, estoy descansando.'
             
